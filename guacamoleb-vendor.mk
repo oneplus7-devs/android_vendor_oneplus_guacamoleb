@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/bin/hw/vendor.oneplus.camera.CameraHIDL@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.camera.CameraHIDL@1.0-service \
     vendor/oneplus/guacamoleb/proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.vibrator@1.2-service \
+    vendor/oneplus/guacamoleb/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/camera/arccali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arccali.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/camera/ashdr/iso617_4608x3456.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/iso617_4608x3456.ncf \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
@@ -32,6 +33,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template1.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template1.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template2.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template2.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template3.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template3.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template4.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_3_6/template4.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template1.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template1.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template2.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template2.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template3.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template3.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template4.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/double_fan_target_4_2/template4.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/fan_target/template1.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/fan_target/template1.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/fan_target/template2.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/fan_target/template2.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/fan_target/template3.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/fan_target/template3.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/fan_target/template4.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/fan_target/template4.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/slanted_target/template1.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/slanted_target/template1.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/slanted_target/template2.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/slanted_target/template2.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/slanted_target/template3.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/slanted_target/template3.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/image_quality/templates/slanted_target/template4.pgm:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/image_quality/templates/slanted_target/template4.pgm \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/qfp_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/qfp_config.txt \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/wakeup/templates/template_imaginary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/wakeup/templates/template_imaginary.bin \
+    vendor/oneplus/guacamoleb/proprietary/vendor/etc/qti_fp/wakeup/templates/template_real.bin:$(TARGET_COPY_OUT_VENDOR)/etc/qti_fp/wakeup/templates/template_real.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc5035.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/com.qti.sensor.imx371.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx371.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx471.so \
@@ -94,9 +114,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib/fp_hal_extension.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/goodix.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/goodix.fod.msmnile.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/silead.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/silead.fod.msmnile.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ud_hal.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp-service.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libsl_fp_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_algo.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libsl_fp_impl_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl_util.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libsl_fp_nosec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_nosec.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/libsl_fp_prepro.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_prepro.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oneplus.fingerprint.extension@1.0.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/GyroOffset_db.config:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/GyroOffset_db.config \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc5035.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.imx371.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx371.so \
@@ -170,6 +203,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/oneplus6_vstab_db_1_1080p_video_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/oneplus6_vstab_db_1_1080p_video_30fps.config \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/oneplus6_vstab_db_1_1080p_video_30fps_tmp.config:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/oneplus6_vstab_db_1_1080p_video_30fps_tmp.config \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/oneplus6_vstab_db_1_720p_video_30fps.config:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/oneplus6_vstab_db_1_720p_video_30fps.config \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/goodix.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.msmnile.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/silead.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/silead.fod.msmnile.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_proxy_stub.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libsl_fp_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_algo.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libsl_fp_impl_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl_util.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libsl_fp_nosec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_nosec.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libsl_fp_prepro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_prepro.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
